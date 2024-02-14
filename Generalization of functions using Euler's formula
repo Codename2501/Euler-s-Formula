@@ -22,7 +22,7 @@ namespace NewDifferential_1
 			
 			//part1
 			//e^(i*theta)=cos+i*sin
-			//theta=2*π*n-i*log((1+i*d)/sqrt(d^2+1)) {n=0}
+			//theta=2*π*n-i*log(cos+i*sin) {n=0}
 			var log = new Complex(cos, sin);
 			var theta = 2.0*Math.PI*0.0-Complex.ImaginaryOne * Complex.Log(log);
 
