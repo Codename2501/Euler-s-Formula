@@ -16,7 +16,7 @@ namespace NewDifferential_1
 		{
 			double sin, cos, fx, a;
 			a = 1.0e2;
-			fx = Function(a)*1.0e-200;
+			fx = Function(a);
 			sin = fx / Math.Sqrt(fx * fx + 1.0);
 			cos = 1.0 / Math.Sqrt(fx * fx + 1.0);
 			
@@ -30,7 +30,7 @@ namespace NewDifferential_1
 			Console.WriteLine("Function(a):{0}", Function(a));
 			Console.WriteLine("theta :{0}", theta);
 			//Console.WriteLine("cos:{0} Math.Cos:{1} \nsin:{2} Math.Sin:{3}", cos, Math.Cos(theta.Real), sin, Math.Sin(theta.Real));
-			Console.WriteLine("(e^(i*theta)/cos(theta)-1.0)*1.0e200 :{0}", (Complex.Exp(Complex.ImaginaryOne * theta) / Complex.Cos(theta) - 1.0).Imaginary*1.0e200);
+			Console.WriteLine("(e^(i*theta)/cos(theta)-1.0) :{0}", (Complex.Exp(Complex.ImaginaryOne * theta) / cos - 1.0).Imaginary);
 		}
 		public double Function(double x)
 		{
