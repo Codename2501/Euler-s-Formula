@@ -30,7 +30,7 @@ namespace NewDifferential_1
 			Console.WriteLine("Function(a):{0}", Function(a));
 			Console.WriteLine("theta :{0}", theta);
 			//Console.WriteLine("cos:{0} Math.Cos:{1} \nsin:{2} Math.Sin:{3}", cos, Math.Cos(theta.Real), sin, Math.Sin(theta.Real));
-			Console.WriteLine("(e^(i*theta)/cos-1.0) :{0}", (Complex.Exp(Complex.ImaginaryOne * theta) / cos - 1.0));
+			Console.WriteLine("(e^(i*theta)/cos-1.0) :{0}", (Complex.Exp(Complex.ImaginaryOne * theta) / cos - 1.0).Imaginary);
 		}
 		public double Function(double x)
 		{
